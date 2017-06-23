@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+
+	<!--空文件-->
+	<FILE.NULL>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</FILE.NULL>
+	
+
+	<!--2.2.2.1.6.2省份账单文件-账单文件-->
+	<IOTBILL.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+			<acmSum type="int" len="10" tag="52" />
+		</head>
+		<body>
+			<rcds tag="156">
+				<rcd type="int" len="4" tag="200" />
+				<rcd type="String" len="20" tag="201" />
+				<rcd type="String" len="20" tag="202" />
+				<rcd type="int" len="10" tag="203" />
+				<rcd type="String" len="6" tag="204" />
+				<rcd type="String" len="30" tag="205" />
+				<rcd type="String" len="30" tag="206" />
+				<rcd type="String" len="12" tag="207" />
+				<rcd type="int" len="10" tag="208" />
+				<rcd type="int" len="10" tag="209" />
+				<rcd type="int" len="5" tag="210" />
+				<rcd type="String" len="12" tag="211" />
+				<rcd type="int" len="2" tag="212" />
+				<rcd type="String" len="20" tag="217" />
+				<rcd type="String" len="30" tag="218" />
+				<rcd type="int" len="2" tag="219" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOTBILL.ZD>
+	
+	<!--2.2.2.1.6.4省份账单文件-错误文件-->
+	<EIOTBILL.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51"  />
+		</head>
+		<body>
+			<rcds tag="156">
+				<rcd type="int" len="4" tag="72" />
+				<rcd type="String" len="4" tag="73" />
+				<rcd type="int" len="4" tag="74" />
+				<rcd type="String" len="1024" tag="75" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</EIOTBILL.ZD>
+	
+	
+	<!--2.2.2.1.7.2省份销帐文件-销帐文件-->
+	<BILL2IOT.PAY>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="157">
+				<rcd type="int" len="4" tag="200" />
+				<rcd type="String" len="20" tag="213" />
+				<rcd type="String" len="20" tag="201" />
+				<rcd type="String" len="24" tag="202" />
+				<rcd type="String" len="3" tag="205" />
+				<rcd type="String" len="6" tag="206" />
+				<rcd type="String" len="12" tag="207" />
+				<rcd type="int" len="10" tag="209" />
+				<rcd type="String" len="14" tag="214" />
+				<rcd type="String" len="5" tag="215" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</BILL2IOT.PAY>
+	
+	<!--2.2.2.1.7.4省份销帐文件-错误文件-->
+	<EBILL2IOT.PAY>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="157">
+				<rcd type="int" len="4" tag="72" />
+				<rcd type="String" len="4" tag="73" />
+				<rcd type="int" len="4" tag="74" />
+				<rcd type="String" len="1024" tag="75" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</EBILL2IOT.PAY>
+	
+	
+	<!--2.2.2.1.8.2省份调帐文件-调帐文件-->
+	<IOTBILL.ADJ>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="158">
+				<rcd type="int" len="4" tag="200" />
+				<rcd type="String" len="20" tag="201" />
+				<rcd type="String" len="20" tag="202" />
+				<rcd type="int" len="10" tag="203" />
+				<rcd type="String" len="6" tag="204" />
+				<rcd type="String" len="6" tag="205" />
+				<rcd type="String" len="30" tag="206" />
+				<rcd type="String" len="30" tag="207" />
+				<rcd type="String" len="12" tag="208" />
+				<rcd type="int" len="10" tag="209" />
+				<rcd type="int" len="10" tag="210" />
+				<rcd type="int" len="5" tag="211" />
+				<rcd type="String" len="12" tag="212" />
+				<rcd type="int" len="2" tag="213" />
+				<rcd type="String" len="20" tag="217" />
+				<rcd type="String" len="30" tag="218" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOTBILL.ADJ>
+	
+	<!--2.2.2.1.8.4省份调帐文件-错误文件-->
+	<EIOTBILL.ADJ>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="158">
+				<rcd type="int" len="4" tag="72" />
+				<rcd type="String" len="4" tag="73" />
+				<rcd type="int" len="4" tag="74" />
+				<rcd type="String" len="1024" tag="75" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</EIOTBILL.ADJ>
+	
+	
+	<!--2.2.2.1.15.2省份托收结果文件-托收结果文件-->
+	<IOT_COLLECTION.PAY>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="163">
+				<rcd type="int" len="4" tag="200" />
+				<rcd type="String" len="20" tag="213" />
+				<rcd type="String" len="20" tag="201" />
+				<rcd type="String" len="24" tag="202" />
+				<rcd type="String" len="3" tag="205" />
+				<rcd type="String" len="6" tag="206" />
+				<rcd type="String" len="12" tag="207" />
+				<rcd type="int" len="10" tag="209" />
+				<rcd type="String" len="14" tag="214" />
+				<rcd type="String" len="5" tag="215" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOT_COLLECTION.PAY>
+	
+	<!--2.2.2.1.15.4省份托收结果文件-错误文件-->
+	<EIOT_COLLECTION.PAY>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="163">
+				<rcd type="int" len="4" tag="72" />
+				<rcd type="String" len="4" tag="73" />
+				<rcd type="int" len="4" tag="74" />
+				<rcd type="String" len="1024" tag="75" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</EIOT_COLLECTION.PAY>
+	
+	<!--2.2.2.1.16.2省份发票账单文件-发票账单文件-->
+	<IOT_INVOICEBILL.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="164">
+				<rcd type="int" len="6" tag="200" />
+				<rcd type="String" len="20" tag="213" />
+				<rcd type="String" len="20" tag="201" />
+				<rcd type="String" len="24" tag="202" />
+				<rcd type="String" len="3" tag="205" />
+				<rcd type="String" len="6" tag="206" />
+				<rcd type="String" len="12" tag="207" />
+				<rcd type="int" len="10" tag="203" />
+				<rcd type="int" len="10" tag="209" />
+				<rcd type="int" len="5" tag="210" />
+				<rcd type="int" len="10" tag="208" />
+				<rcd type="String" len="14" tag="214" />
+				<rcd type="String" len="5" tag="215" />
+				<rcd type="String" len="24" tag="216" />
+				<rcd type="String" len="1" tag="217" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOT_INVOICEBILL.ZD>
+	
+	<!--2.2.2.1.16.4省份发票账单文件-错误文件-->
+	<EIOT_INVOICEBILL.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="164">
+				<rcd type="int" len="4" tag="72" />
+				<rcd type="String" len="4" tag="73" />
+				<rcd type="int" len="4" tag="74" />
+				<rcd type="String" len="1024" tag="75" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</EIOT_INVOICEBILL.ZD>
+	
+	
+	<!--2.2.2.1.17.2省份分摊账单文件-分摊账单文件-->
+	<IOTAPPORTION.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="183">
+				<rcd type="int" len="12" tag="200" />
+				<rcd type="String" len="20" tag="201" />
+				<rcd type="String" len="20" tag="202" />
+				<rcd type="String" len="6" tag="203" />
+				<rcd type="int" len="12" tag="204" />
+				<rcd type="String" len="20" tag="205" />
+				<rcd type="String" len="12" tag="206" />
+				<rcd type="int" len="9" tag="207" />
+				<rcd type="String" len="18" tag="208" />
+				<rcd type="int" len="1" tag="209" />
+				<rcd type="int" len="5" tag="210" />
+				<rcd type="int" len="12" tag="211" />
+				<rcd type="int" len="6" tag="212" />
+				<rcd type="int" len="1" tag="213" />
+				<rcd type="String" len="24" tag="214" />
+				<rcd type="String" len="18" tag="215" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOTAPPORTION.ZD>
+	
+	<!--2.2.2.1.17.4省份分摊账单文件-错误文件-->
+	<EIOTAPPORTION.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="183">
+				<rcd type="int" len="4" tag="72" />
+				<rcd type="String" len="4" tag="73" />
+				<rcd type="int" len="4" tag="74" />
+				<rcd type="String" len="1024" tag="75" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</EIOTAPPORTION.ZD>
+	
+	
+	<!--2.2.2.2.1物联网-TTSS语音清单-->
+	<IOT_EOP_CDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<blCode type="String" len="8" tag="52" />
+			<fileSeq type="String" len="7" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="159">
+				<rcd type="int" len="10" tag="499" errCode="F010" />
+				<rcd type="String" len="2" tag="280" errCode="F030" />
+				<rcd type="String" len="15" tag="101" errCode="F050" />
+				<rcd type="String" len="32" tag="102" errCode="F060" />
+				<rcd type="String" len="32" tag="103" errCode="F070" />
+				<rcd type="String" len="32" tag="153" errCode="F080" />
+				<rcd type="String" len="32" tag="352" errCode="F091" />
+				<rcd type="String" len="14" tag="245" errCode="F090" />
+				<rcd type="String" len="14" tag="293" errCode="F100" />
+				<rcd type="int" len="8" tag="105" errCode="F110" />
+				<rcd type="String" len="20" tag="107" errCode="F120" />
+				<rcd type="String" len="20" tag="108" errCode="F150" />
+				<rcd type="String" len="20" tag="464" errCode="F160" />
+				<rcd type="String" len="20" tag="109" errCode="F170" />
+				<rcd type="String" len="20" tag="465" errCode="F180" />
+				<rcd type="String" len="9" tag="315" errCode="F190" />
+				<rcd type="String" len="5" tag="112" errCode="F210" />
+				<rcd type="String" len="5" tag="111" errCode="F250" />
+				<rcd type="String" len="1" tag="154" errCode="F260" />
+				<rcd type="String" len="6" tag="121" errCode="F310" />
+				<rcd type="String" len="25" tag="106" errCode="F410" />
+				<rcd type="String" len="25" tag="460" errCode="F420" />
+				<rcd type="int" len="4" tag="491" errCode="F540" />
+				<rcd type="String" len="100" tag="501" errCode="F490" />
+				<rcd type="String" len="100" tag="484" errCode="F500" />
+				<rcd type="String" len="100" tag="485" errCode="F510" />
+				<rcd type="String" len="100" tag="486" errCode="F520" />
+				<rcd type="String" len="100" tag="487" errCode="F530" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<blCode type="String" len="8" tag="52" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_EOP_CDR>
+	
+	<!--2.2.2.2.2物联网-TTSS数据清单-->
+	<IOT_EOP_DDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<blCode type="String" len="8" tag="52" />
+			<fileSeq type="String" len="7" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="160">
+				<rcd type="int" len="10" tag="499" errCode="F010" />
+				<rcd type="String" len="32" tag="102" errCode="F030" />
+				<rcd type="String" len="15" tag="101" errCode="F040" />
+				<rcd type="String" len="30" tag="307" errCode="F050" />
+				<rcd type="String" len="63" tag="308" errCode="F060" />
+				<rcd type="String" len="64" tag="309" errCode="F070" />
+				<rcd type="String" len="2" tag="469" errCode="F080" />
+				<rcd type="String" len="30" tag="470" errCode="F090" />
+				<rcd type="String" len="30" tag="471" errCode="F100" />
+				<rcd type="String" len="9" tag="112" errCode="F110" />
+				<rcd type="String" len="15" tag="256" errCode="F140" />
+				<rcd type="String" len="15" tag="257" errCode="F150" />
+				<rcd type="String" len="14" tag="245" errCode="F170" />
+				<rcd type="String" len="14" tag="293" errCode="F180" />
+				<rcd type="int" len="10" tag="105" errCode="F190" />
+				<rcd type="String" len="6" tag="121" errCode="F240" />
+				<rcd type="String" len="25" tag="106" errCode="F290" />
+				<rcd type="String" len="25" tag="460" errCode="F300" />
+				<rcd type="int" len="4" tag="491" errCode="F540" />
+				<rcd type="String" len="50" tag="500" errCode="F550" />
+				<rcd type="String" len="100" tag="501" errCode="F560" />
+				<rcd type="String" len="100" tag="502" errCode="F570" />
+				<rcd type="String" len="100" tag="483" errCode="F370" />
+				<rcd type="String" len="100" tag="484" errCode="F380" />
+				<rcd type="String" len="100" tag="485" errCode="F390" />
+				<rcd type="String" len="100" tag="486" errCode="F400" />
+				<rcd type="String" len="100" tag="487" errCode="F410" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<blCode type="String" len="8" tag="52" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<upSum type="String" len="15" tag="69" />
+			<downSum type="String" len="15" tag="70" />
+			<upDownSum type="String" len="15" tag="71" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_EOP_DDR>
+	
+	<!--2.2.2.2.3物联网-TTSS短信清单-->
+	<IOT_EOP_MDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<blCode type="String" len="8" tag="52" />
+			<fileSeq type="String" len="7" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="161">
+				<rcd type="int" len="10" tag="499" errCode="F010" />
+				<rcd type="String" len="2" tag="280" errCode="F030" />
+				<rcd type="String" len="14" tag="350" errCode="F050" />
+				<rcd type="String" len="32" tag="102" errCode="F060" />
+				<rcd type="String" len="15" tag="101" errCode="F070" />
+				<rcd type="String" len="32" tag="103" errCode="F080" />
+				<rcd type="String" len="32" tag="353" errCode="F090" />
+				<rcd type="String" len="2" tag="354" errCode="F100" />
+				<rcd type="String" len="6" tag="121" errCode="F140" />
+				<rcd type="String" len="25" tag="106" errCode="F190" />
+				<rcd type="String" len="25" tag="460" errCode="F200" />
+				<rcd type="String" len="100" tag="483" errCode="F270" />
+				<rcd type="String" len="100" tag="484" errCode="F280" />
+				<rcd type="String" len="100" tag="485" errCode="F290" />
+				<rcd type="String" len="100" tag="486" errCode="F300" />
+				<rcd type="String" len="100" tag="487" errCode="F310" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<blCode type="String" len="8" tag="52" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_EOP_MDR>
+	
+	<!--2.2.2.2.4物联网-TTSS增值清单-->
+	<IOT_EOP_VDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<blCode type="String" len="8" tag="52" />
+			<fileSeq type="String" len="7" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="162">
+				<rcd type="int" len="10" tag="499" errCode="F010" />
+				<rcd type="String" len="4" tag="450" errCode="F020" />
+				<rcd type="String" len="32" tag="102" errCode="F040" />
+				<rcd type="String" len="36" tag="233" errCode="F050" />
+				<rcd type="String" len="36" tag="235" errCode="F060" />
+				<rcd type="String" len="20" tag="243" errCode="F070" />
+				<rcd type="String" len="30" tag="473" errCode="F080" />
+				<rcd type="String" len="60" tag="474" errCode="F090" />
+				<rcd type="String" len="30" tag="278" errCode="F100" />
+				<rcd type="String" len="60" tag="475" errCode="F110" />
+				<rcd type="int" len="10" tag="264" errCode="F120" />
+				<rcd type="String" len="15" tag="101" errCode="F140" />
+				<rcd type="String" len="14" tag="245" errCode="F150" />
+				<rcd type="String" len="14" tag="246" errCode="F160" />
+				<rcd type="int" len="4" tag="105" errCode="F170" />
+				<rcd type="int" len="4" tag="254" errCode="F180" />
+				<rcd type="String" len="10" tag="267" errCode="F240" />
+				<rcd type="String" len="50" tag="488" errCode="F360" />
+				<rcd type="String" len="100" tag="483" errCode="F310" />
+				<rcd type="String" len="100" tag="484" errCode="F320" />
+				<rcd type="String" len="100" tag="485" errCode="F330" />
+				<rcd type="String" len="100" tag="486" errCode="F340" />
+				<rcd type="String" len="100" tag="487" errCode="F350" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<blCode type="String" len="8" tag="52" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_EOP_VDR>
+	
+	
+	<!-- 2.2.2.3 	下发EDA接口文件 -->
+	<!-- 1.1.1 语音业务清单 -->
+	<EDA_IOT_CDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="59">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="25" tag="103" errCode="F070" />
+				<rcd type="String" len="25" tag="153" errCode="F080" />
+				<rcd type="String" len="14" tag="245" errCode="F090" />
+				<rcd type="String" len="14" tag="293" errCode="F110" />
+				<rcd type="int" len="8" tag="105" errCode="F120" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F135" />
+				<rcd type="int" len="10" tag="117" errCode="F140" />
+				<rcd type="int" len="10" tag="493" errCode="F150" />
+				<rcd type="int" len="10" tag="118" errCode="F160" />
+				<rcd type="int" len="10" tag="494" errCode="F170" />
+				<rcd type="int" len="10" tag="119" errCode="F180" />
+				<rcd type="int" len="10" tag="495" errCode="F190" />
+				<rcd type="int" len="1" tag="280" errCode="F200" />
+				<rcd type="int" len="1" tag="113" errCode="F210" />
+				<rcd type="int" len="4" tag="498" errCode="F220" />
+				<rcd type="String" len="6" tag="121" errCode="F230" />
+				<rcd type="String" len="25" tag="106" errCode="F240" />
+				<rcd type="String" len="15" tag="101" errCode="F250" /> <!-- 存疑 -->
+				<rcd type="String" len="25" tag="460" errCode="F260" />
+				<rcd type="int" len="1" tag="496" errCode="F270" />
+				<rcd type="int" len="4" tag="488" errCode="F040" />
+				<rcd type="int" len="4" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F280" />
+				<rcd type="String" len="100" tag="484" errCode="F290" />
+				<rcd type="String" len="100" tag="485" errCode="F300" />
+				<rcd type="String" len="100" tag="486" errCode="F310" />
+				<rcd type="String" len="100" tag="487" errCode="F320" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</EDA_IOT_CDR>
+	
+	<!-- 1.1.2 数据业务清单 -->
+	<EDA_IOT_DDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="60">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="14" tag="245" errCode="F070" />
+				<rcd type="int" len="10" tag="105" errCode="F080" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F095" />
+				<rcd type="int" len="10" tag="322" errCode="F100" />
+				<rcd type="int" len="10" tag="493" errCode="F110" />
+				<rcd type="int" len="10" tag="119" errCode="F120" />
+				<rcd type="int" len="10" tag="120" errCode="F130" />
+				<rcd type="String" len="6" tag="121" errCode="F140" />
+				<rcd type="String" len="25" tag="106" errCode="F150" />
+				<rcd type="String" len="15" tag="101" errCode="F160" />
+				<rcd type="int" len="2" tag="469" errCode="F170" />
+				<rcd type="int" len="1" tag="496" errCode="F180" />
+				<rcd type="int" len="15" tag="256" errCode="F190" />
+				<rcd type="int" len="15" tag="257" errCode="F200" />
+				<rcd type="int" len="18" tag="515" errCode="F210" />
+				<rcd type="int" len="1" tag="113" errCode="F220" />
+				<rcd type="int" len="4" tag="488" errCode="F040" />
+				<rcd type="int" len="4" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F230" />
+				<rcd type="String" len="100" tag="484" errCode="F240" />
+				<rcd type="String" len="100" tag="485" errCode="F250" />
+				<rcd type="String" len="100" tag="486" errCode="F260" />
+				<rcd type="String" len="100" tag="487" errCode="F270" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<upSum type="int" len="15" tag="69" />
+			<downSum type="int" len="15" tag="70" />
+			<upDownSum type="int" len="15" tag="71" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</EDA_IOT_DDR>
+	
+	<!-- 1.1.3 增值业务清单 -->
+	<EDA_IOT_VDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="62">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="25" tag="103" errCode="F070" />
+				<rcd type="String" len="14" tag="245" errCode="F080" />
+				<rcd type="String" len="14" tag="246" errCode="F090" />
+				<rcd type="int" len="4" tag="105" errCode="F100" />
+				<rcd type="int" len="4" tag="254" errCode="F110" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F130" />
+				<rcd type="int" len="10" tag="264" errCode="F140" />
+				<rcd type="int" len="10" tag="493" errCode="F150" />
+				<rcd type="String" len="4" tag="267" errCode="F160" />
+				<rcd type="String" len="8" tag="243" errCode="F170" />
+				<rcd type="String" len="20" tag="473" errCode="F180" />
+				<rcd type="String" len="40" tag="474" errCode="F190" />
+				<rcd type="String" len="6" tag="278" errCode="F200" />
+				<rcd type="String" len="40" tag="475" errCode="F210" />
+				<rcd type="String" len="15" tag="101" errCode="F220" />
+				<rcd type="int" len="1" tag="496" errCode="F240" />
+				<rcd type="int" len="4" tag="488" errCode="F040" />
+				<rcd type="int" len="4" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F250" />
+				<rcd type="String" len="100" tag="484" errCode="F260" />
+				<rcd type="String" len="100" tag="485" errCode="F270" />
+				<rcd type="String" len="100" tag="486" errCode="F280" />
+				<rcd type="String" len="100" tag="487" errCode="F290" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</EDA_IOT_VDR>
+	
+	<!-- 1.1.4 短信业务清单 -->
+	
+	<!-- 文件与文档不一致
+	<EDA_IOT_MDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="61">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="25" tag="103" errCode="F070" />
+				<rcd type="String" len="14" tag="245" errCode="F080" />
+				<rcd type="int" len="10" tag="105" errCode="F090" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F110" />
+				<rcd type="int" len="10" tag="356" errCode="F120" />
+				<rcd type="int" len="10" tag="493" errCode="F130" />
+				<rcd type="int" len="2" tag="280" errCode="F140" />
+				<rcd type="String" len="6" tag="121" errCode="F150" />
+				<rcd type="String" len="25" tag="106" errCode="F160" />
+				<rcd type="String" len="15" tag="101" errCode="F170" /> 
+				<rcd type="String" len="25" tag="460" errCode="F180" />
+				<rcd type="int" len="1" tag="496" errCode="F210" />
+				<rcd type="int" len="15" tag="256" errCode="F220" />
+				<rcd type="int" len="4" tag="488" errCode="F040" />
+				<rcd type="int" len="4" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F230" />
+				<rcd type="String" len="100" tag="484" errCode="F240" />
+				<rcd type="String" len="100" tag="485" errCode="F250" />
+				<rcd type="String" len="100" tag="486" errCode="F260" />
+				<rcd type="String" len="100" tag="487" errCode="F270" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</EDA_IOT_MDR>
+	-->
+	
+	<EDA_IOT_MDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="61">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="25" tag="103" errCode="F070" />
+				<rcd type="String" len="14" tag="245" errCode="F080" />
+				<rcd type="int" len="10" tag="105" errCode="F090" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F110" />
+				<rcd type="int" len="10" tag="356" errCode="F120" />
+				<rcd type="int" len="10" tag="493" errCode="F130" />
+				<rcd type="int" len="2" tag="280" errCode="F140" />
+				<rcd type="String" len="6" tag="121" errCode="F150" />
+				<rcd type="int" len="1" tag="496" errCode="F210" />
+				<rcd type="int" len="15" tag="256" errCode="F220" />
+				<rcd type="int" len="4" tag="488" errCode="F040" />
+				<rcd type="int" len="4" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F230" />
+				<rcd type="String" len="100" tag="484" errCode="F240" />
+				<rcd type="String" len="100" tag="485" errCode="F250" />
+				<rcd type="String" len="100" tag="486" errCode="F260" />
+				<rcd type="String" len="100" tag="487" errCode="F270" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</EDA_IOT_MDR>
+	
+	
+	<!-- 1.2.1 账单数据-月账单 -->
+	<EDA_IOT_MBI>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="63">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="String" len="14" tag="245" errCode="F030" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F050" />
+				<rcd type="int" len="10" tag="2159" errCode="F060" />
+				<rcd type="String" len="12" tag="2158" errCode="F070" />
+				<rcd type="int" len="1" tag="496" errCode="F080" />
+				<rcd type="int" len="18" tag="259" errCode="F090" />
+				<rcd type="String" len="6" tag="476" errCode="F100" />
+				<rcd type="String" len="2" tag="479" errCode="F110" />
+				<rcd type="int" len="18" tag="2163" errCode="F120" />
+				<rcd type="int" len="1" tag="480" errCode="F130" />
+				<rcd type="int" len="4" tag="315" errCode="F140" />
+				<rcd type="int" len="4" tag="488" errCode="F040" />
+				<rcd type="int" len="4" tag="489" errCode="F040" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</EDA_IOT_MBI>
+	
+	
+	<!--     有重复 同  省份分摊账单文件
+	 1.2.2.2 账单数据-分摊后账单-分摊账单文件 
+	<IOTAPPORTION.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="6" tag="51" />
+		</head>
+		<body>
+			<rcds tag="183">
+				<rcd type="int" len="12" tag="200" />
+				<rcd type="String" len="20" tag="201" />
+				<rcd type="String" len="20" tag="202" />
+				<rcd type="String" len="6" tag="203" />
+				<rcd type="int" len="12" tag="204" />
+				<rcd type="String" len="20" tag="205" />
+				<rcd type="String" len="12" tag="206" />
+				<rcd type="int" len="9" tag="207" />
+				<rcd type="String" len="18" tag="208" />
+				<rcd type="int" len="1" tag="209" />
+				<rcd type="int" len="5" tag="210" />
+				<rcd type="int" len="12" tag="211" />
+				<rcd type="int" len="6" tag="212" />
+				<rcd type="int" len="1" tag="213" />
+				<rcd type="String" len="24" tag="214" />
+				<rcd type="String" len="18" tag="215" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOTAPPORTION.ZD>
+	
+	1.2.2.2 账单数据-分摊后账单-错误文件 
+	<EIOTAPPORTION.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="183">
+				<rcd type="int" len="4" tag="72" />
+				<rcd type="String" len="4" tag="73" />
+				<rcd type="int" len="4" tag="74" />
+				<rcd type="String" len="1024" tag="75" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" default="END" />
+		</end>
+	</EIOTAPPORTION.ZD>
+	-->
+	
+	
+	<!-- 1.3.1 统计类数据-调帐记录文件 -->
+	<IOT_IOT_ADJ>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="6" tag="51" />
+		</head>
+		<body>
+			<rcds tag="182">
+				<rcd type="int" len="9" tag="200" errCode="F010" />
+				<rcd type="int" len="30" tag="201" errCode="F020" />
+				<rcd type="int" len="30" tag="202" errCode="F030" />
+				<rcd type="String" len="3" tag="203" errCode="F040" />
+				<rcd type="String" len="14" tag="204" errCode="F050" />
+				<rcd type="String" len="6" tag="205" errCode="F060" />
+				<rcd type="String" len="30" tag="206" errCode="F070" />
+				<rcd type="String" len="32" tag="207" errCode="F080" />
+				<rcd type="int" len="9" tag="208" errCode="F090"/>
+				<rcd type="String" len="14" tag="209" errCode="F100" />
+				<rcd type="int" len="18" tag="210" errCode="F110" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOT_IOT_ADJ>
+	
+	<!-- 1.3.1 统计类数据-欠费数据文件 -->
+	<IOT_IOT_ACCT_ITEM>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="6" tag="51" />
+		</head>
+		<body>
+			<rcds tag="180">
+				<rcd type="int" len="18" tag="200" errCode="F010" />
+				<rcd type="String" len="6" tag="201" errCode="F020" />
+				<rcd type="int" len="9" tag="202" errCode="F030" />
+				<rcd type="int" len="8" tag="203" errCode="F040" />
+				<rcd type="int" len="18" tag="204" errCode="F050" />
+				<rcd type="int" len="18" tag="205" errCode="F060" />
+				<rcd type="int" len="12" tag="206" errCode="F070" />
+				<rcd type="int" len="18" tag="207" errCode="F080" />
+				<rcd type="String" len="3" tag="208" errCode="F090"/>
+				<rcd type="String" len="14" tag="209" errCode="F100" />
+				<rcd type="String" len="14" tag="210" errCode="F110" />
+				<rcd type="String" len="14" tag="211" errCode="F120" />
+				<rcd type="int" len="18" tag="212" errCode="F130" />
+				<rcd type="int" len="30" tag="213" errCode="F140" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOT_IOT_ACCT_ITEM>
+	
+	
+	
+	<!-- 2.2.2.4 	下发物联网公司文件 -->
+	<!-- 1.1.1 语音业务清单 -->
+	<IOT_IOT_CDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="59">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="25" tag="103" errCode="F070" />
+				<rcd type="String" len="25" tag="153" errCode="F080" />
+				<rcd type="String" len="14" tag="245" errCode="F090" />
+				<rcd type="String" len="14" tag="293" errCode="F110" />
+				<rcd type="int" len="8" tag="105" errCode="F120" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F135" />
+				<rcd type="int" len="10" tag="117" errCode="F140" />
+				<rcd type="int" len="10" tag="493" errCode="F150" />
+				<rcd type="int" len="10" tag="118" errCode="F160" />
+				<rcd type="int" len="10" tag="494" errCode="F170" />
+				<rcd type="int" len="10" tag="119" errCode="F180" />
+				<rcd type="int" len="10" tag="495" errCode="F190" />
+				<rcd type="int" len="1" tag="280" errCode="F200" />
+				<rcd type="int" len="1" tag="113" errCode="F210" />
+				<rcd type="int" len="4" tag="498" errCode="F220" />
+				<rcd type="String" len="6" tag="121" errCode="F230" />
+				<rcd type="String" len="25" tag="106" errCode="F240" />
+				<rcd type="String" len="15" tag="101" errCode="F250" /> <!-- 存疑 -->
+				<rcd type="String" len="25" tag="460" errCode="F260" />
+				<rcd type="int" len="1" tag="496" errCode="F270" />
+				<rcd type="int" len="20" tag="488" errCode="F040" />
+				<rcd type="int" len="8" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F280" />
+				<rcd type="String" len="100" tag="484" errCode="F290" />
+				<rcd type="String" len="100" tag="485" errCode="F300" />
+				<rcd type="String" len="100" tag="486" errCode="F310" />
+				<rcd type="String" len="100" tag="487" errCode="F320" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="5" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_IOT_CDR>
+	
+	<!-- 1.1.2 数据业务清单 -->
+	<IOT_IOT_DDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="60">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="14" tag="245" errCode="F070" />
+				<rcd type="int" len="10" tag="105" errCode="F080" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F095" />
+				<rcd type="int" len="10" tag="322" errCode="F100" />
+				<rcd type="int" len="10" tag="493" errCode="F110" />
+				<rcd type="int" len="10" tag="119" errCode="F120" />
+				<rcd type="int" len="10" tag="120" errCode="F130" />
+				<rcd type="String" len="6" tag="121" errCode="F140" />
+				<rcd type="String" len="25" tag="106" errCode="F150" />
+				<rcd type="String" len="15" tag="101" errCode="F160" />
+				<rcd type="int" len="2" tag="469" errCode="F170" />
+				<rcd type="int" len="1" tag="496" errCode="F180" />
+				<rcd type="int" len="15" tag="256" errCode="F190" />
+				<rcd type="int" len="15" tag="257" errCode="F200" />
+				<rcd type="int" len="18" tag="515" errCode="F210" />
+				<rcd type="int" len="1" tag="113" errCode="F220" />
+				<rcd type="int" len="20" tag="488" errCode="F040" />
+				<rcd type="int" len="8" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F230" />
+				<rcd type="String" len="100" tag="484" errCode="F240" />
+				<rcd type="String" len="100" tag="485" errCode="F250" />
+				<rcd type="String" len="100" tag="486" errCode="F260" />
+				<rcd type="String" len="100" tag="487" errCode="F270" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<upSum type="int" len="15" tag="69" />
+			<downSum type="int" len="15" tag="70" />
+			<upDownSum type="int" len="15" tag="71" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_IOT_DDR>
+	
+	<!-- 1.1.3 增值业务清单 -->
+	<IOT_IOT_VDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="62">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="25" tag="103" errCode="F070" />
+				<rcd type="String" len="14" tag="245" errCode="F080" />
+				<rcd type="String" len="14" tag="246" errCode="F090" />
+				<rcd type="int" len="4" tag="105" errCode="F100" />
+				<rcd type="int" len="4" tag="254" errCode="F110" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F130" />
+				<rcd type="int" len="10" tag="264" errCode="F140" />
+				<rcd type="int" len="10" tag="493" errCode="F150" />
+				<rcd type="String" len="4" tag="267" errCode="F160" />
+				<rcd type="String" len="8" tag="243" errCode="F170" />
+				<rcd type="String" len="20" tag="473" errCode="F180" />
+				<rcd type="String" len="40" tag="474" errCode="F190" />
+				<rcd type="String" len="6" tag="278" errCode="F200" />
+				<rcd type="String" len="40" tag="475" errCode="F210" />
+				<rcd type="String" len="15" tag="101" errCode="F220" />
+				<rcd type="int" len="1" tag="496" errCode="F240" />
+				<rcd type="int" len="20" tag="488" errCode="F040" />
+				<rcd type="int" len="8" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F250" />
+				<rcd type="String" len="100" tag="484" errCode="F260" />
+				<rcd type="String" len="100" tag="485" errCode="F270" />
+				<rcd type="String" len="100" tag="486" errCode="F280" />
+				<rcd type="String" len="100" tag="487" errCode="F290" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_IOT_VDR>
+	
+	<!-- 1.1.4 短信业务清单 -->
+	<IOT_IOT_MDR>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="61">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="4" tag="315" errCode="F040" />
+				<rcd type="String" len="25" tag="102" errCode="F050" />
+				<rcd type="String" len="25" tag="2154" errCode="F060" />
+				<rcd type="String" len="25" tag="103" errCode="F070" />
+				<rcd type="String" len="14" tag="245" errCode="F080" />
+				<rcd type="int" len="10" tag="105" errCode="F090" />
+				<rcd type="int" len="10" tag="499" errCode="F130" />
+				<rcd type="int" len="18" tag="2150" errCode="F110" />
+				<rcd type="int" len="10" tag="356" errCode="F120" />
+				<rcd type="int" len="10" tag="493" errCode="F130" />
+				<rcd type="int" len="2" tag="280" errCode="F140" />
+				<rcd type="String" len="6" tag="121" errCode="F150" />
+				<rcd type="String" len="25" tag="106" errCode="F160" />
+				<rcd type="String" len="15" tag="101" errCode="F170" /> <!-- 存疑 -->
+				<rcd type="String" len="25" tag="460" errCode="F180" />
+				<rcd type="int" len="1" tag="496" errCode="F210" />
+				<rcd type="int" len="15" tag="256" errCode="F220" />
+				<rcd type="int" len="20" tag="488" errCode="F040" />
+				<rcd type="int" len="8" tag="489" errCode="F040" />
+				<rcd type="String" len="100" tag="483" errCode="F230" />
+				<rcd type="String" len="100" tag="484" errCode="F240" />
+				<rcd type="String" len="100" tag="485" errCode="F250" />
+				<rcd type="String" len="100" tag="486" errCode="F260" />
+				<rcd type="String" len="100" tag="487" errCode="F270" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_IOT_MDR>
+	
+	<!-- 1.2.1 物联网账单数据-账户余额  tag=? -->
+	<IOT_IOT_BAL>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="61">
+				<rcd type="int" len="16" tag="490" errCode="F010" />
+				<rcd type="String" len="6" tag="2153" errCode="F020" />
+				<rcd type="int" len="10" tag="497" errCode="F030" />
+				<rcd type="int" len="8" tag="315" errCode="F130" />
+				<rcd type="int" len="18" tag="102" errCode="F050" />
+				<rcd type="String" len="16" tag="2154" errCode="F060" />
+				<rcd type="int" len="18" tag="103" errCode="F070" />
+				<rcd type="int" len="8" tag="153" errCode="F080" />
+				<rcd type="String" len="14" tag="245" errCode="F090" />
+				<rcd type="int" len="4" tag="293" errCode="F140" />
+				<rcd type="String" len="14" tag="105" errCode="F090" />
+				<rcd type="int" len="16" tag="499" errCode="F120" />
+				<rcd type="String" len="8" tag="2150" errCode="F130" />
+				<rcd type="String" len="14" tag="117" errCode="F090" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+			<actSum type="int" len="18" tag="63" />
+		</end>
+	</IOT_IOT_BAL>
+	
+	<!-- 1.2.2 物联网账单数据-分摊前账单、月账单 -->
+	<IOT_IOT_NAPT>
+		<head>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="int" len="5" tag="53" />
+			<fileDate type="String" len="14" tag="54" />
+			<fileVersion type="int" len="4" tag="55" />
+		</head>
+		<body>
+			<rcds tag="63">
+				<rcd type="int" len="18" tag="58" errCode="F010" />
+				<rcd type="String" len="12" tag="59" errCode="F070" />
+				<rcd type="String" len="6" tag="60" errCode="F030" />
+				<rcd type="int" len="18" tag="61" errCode="F130" />
+				<rcd type="int" len="4" tag="62" errCode="F140" />
+				<rcd type="int" len="18" tag="2150" errCode="F060" />
+				<rcd type="int" len="18" tag="64" errCode="F070" />
+				<rcd type="int" len="1" tag="65" errCode="F080" />
+				<rcd type="int" len="18" tag="66" errCode="F090" />
+				<rcd type="int" len="16" tag="67" errCode="F140" />
+				<rcd type="String" len="8" tag="68" errCode="F090" />
+				<rcd type="String" len="8" tag="69" errCode="F120" />
+				<rcd type="String" len="8" tag="70" errCode="F130" />
+				<rcd type="String" len="14" tag="71" errCode="F090" />
+				<rcd type="String" len="8" tag="72" />
+				<rcd type="String" len="8" tag="73" />
+				<rcd type="String" len="8" tag="81" />
+				<rcd type="String" len="14" tag="82" errCode="F090" />
+				<rcd type="String" len="14" tag="83" errCode="F090" />
+				<rcd type="String" len="14" tag="84" errCode="F090" />
+			</rcds>
+		</body>
+		<end>
+			<rcdType type="int" len="4" tag="50" />
+			<fileSeq type="String" len="7" tag="53" />
+			<rcdCnt type="int" len="6" tag="57" />
+		</end>
+	</IOT_IOT_NAPT>
+	
+	<!-- 有重复  同 省份分摊账单文件
+	1.2.3.2 物联网账单数据-分摊后账单-分摊账单文件 
+	<IOTAPPORTION.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="6" tag="51" />
+		</head>
+		<body>
+			<rcds tag="183">
+				<rcd type="int" len="12" tag="200" />
+				<rcd type="String" len="20" tag="201" />
+				<rcd type="String" len="20" tag="202" />
+				<rcd type="String" len="6" tag="203" />
+				<rcd type="int" len="12" tag="204" />
+				<rcd type="String" len="20" tag="205" />
+				<rcd type="String" len="12" tag="206" />
+				<rcd type="int" len="9" tag="207" />
+				<rcd type="String" len="18" tag="208" />
+				<rcd type="int" len="1" tag="209" />
+				<rcd type="int" len="5" tag="210" />
+				<rcd type="int" len="12" tag="211" />
+				<rcd type="int" len="6" tag="212" />
+				<rcd type="int" len="1" tag="213" />
+				<rcd type="String" len="24" tag="214" />
+				<rcd type="String" len="18" tag="215" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOTAPPORTION.ZD>
+	
+	1.2.3.2 账单数据-分摊后账单-错误文件 
+	<EIOTAPPORTION.ZD>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="4" tag="51" />
+		</head>
+		<body>
+			<rcds tag="183">
+				<rcd type="int" len="4" tag="72" />
+				<rcd type="String" len="4" tag="73" />
+				<rcd type="int" len="4" tag="74" />
+				<rcd type="String" len="1024" tag="75" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" default="END" />
+		</end>
+	</EIOTAPPORTION.ZD>
+	-->
+	
+	<!-- 1.3.1 销帐类数据文件-调帐记录文件   同  统计类数据-调帐记录文件  -->
+	
+	
+	<!-- 1.2.3.2 销帐类数据文件-缴费记录文件 -->
+	<IOT_IOT_PAYMENT>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="5" tag="51" />
+		</head>
+		<body>
+			<rcds tag="181">
+				<rcd type="String" len="30" tag="200" errCode="F010" />
+				<rcd type="String" len="6" tag="201" errCode="F020" />
+				<rcd type="int" len="18" tag="202" errCode="F030" />
+				<rcd type="int" len="9" tag="203" errCode="F040" />
+				<rcd type="int" len="9" tag="204" errCode="F050" />
+				<rcd type="String" len="30" tag="205" errCode="F060" />
+				<rcd type="int" len="12" tag="206" errCode="F070" />
+				<rcd type="String" len="14" tag="207" errCode="F080" />
+				<rcd type="String" len="3" tag="208" errCode="F090" />
+				<rcd type="String" len="14" tag="209" errCode="F100" />
+				<rcd type="String" len="30" tag="210" errCode="F110" />
+				<rcd type="int" len="18" tag="211" errCode="F120" />
+				<rcd type="String" len="14" tag="212" errCode="F130" />
+				<rcd type="String" len="32" tag="213" errCode="F140" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOT_IOT_PAYMENT>
+	
+	<!-- 1.3.3 销帐类数据文件-欠费数据文件   同  统计类数据-欠费数据文件  -->
+	
+	<!-- 1.3.4 销帐类数据文件-账单日增量文件 -->
+	<O2_IOT_BILL>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="5" tag="51" />
+			<amtSum type="int" len="20" tag="52" />
+		</head>
+		<body>
+			<rcds tag="194">
+				<rcd type="String" len="20" tag="201" errCode="F010" />
+				<rcd type="String" len="12" tag="202" errCode="F020" />
+				<rcd type="int" len="8" tag="203" errCode="F030" />
+				<rcd type="String" len="12" tag="204" errCode="F040" />
+				<rcd type="String" len="24" tag="205" errCode="F050" />
+				<rcd type="String" len="30" tag="206" errCode="F060" />
+				<rcd type="String" len="32" tag="207" errCode="F070" />
+				<rcd type="String" len="32" tag="208" errCode="F080" />
+				<rcd type="int" len="18" tag="209" errCode="F090" />
+				<rcd type="int" len="18" tag="210" errCode="F100" />
+				<rcd type="int" len="18" tag="211" errCode="F110" />
+				<rcd type="String" len="3" tag="212" errCode="F120" />
+				<rcd type="String" len="18" tag="213" errCode="F130" />
+				<rcd type="int" len="18" tag="214" errCode="F140" />
+				<rcd type="String" len="12" tag="215" errCode="F150" />
+				<rcd type="String" len="32" tag="216" errCode="F160" />
+				<rcd type="String" len="32" tag="217" errCode="F170" />
+				<rcd type="String" len="11" tag="218" errCode="F180" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</O2_IOT_BILL>
+	
+	<!-- 1.3.5 销帐类数据文件-日调帐记录文件-->
+	<IOT_DAY_ADJ>
+		<head>
+			<STA type="String" len="3" tag="50" />
+			<rcdCnt type="int" len="5" tag="51" />
+			<amtSum type="int" len="12" tag="52" />
+		</head>
+		<body>
+			<rcds tag="195">
+				<rcd type="int" len="9" tag="200" errCode="F010" />
+				<rcd type="int" len="30" tag="201" errCode="F020" />
+				<rcd type="int" len="30" tag="202" errCode="F030" />
+				<rcd type="String" len="30" tag="203" errCode="F040" />
+				<rcd type="String" len="32" tag="204" errCode="F050" />
+				<rcd type="int" len="9" tag="205" errCode="F060" />
+				<rcd type="String" len="14" tag="206" errCode="F070" />
+				<rcd type="int" len="18" tag="207" errCode="F080" />
+				<rcd type="String" len="50" tag="208" errCode="F090"/>
+				<rcd type="String" len="32" tag="209" errCode="F100" />
+				<rcd type="String" len="12" tag="210" errCode="F110" />
+				<rcd type="String" len="32" tag="212" errCode="F111" />
+				<rcd type="String" len="32" tag="213" errCode="F112" />
+				<rcd type="String" len="12" tag="214" errCode="F113" />
+			</rcds>
+		</body>
+		<end>
+			<end type="String" len="3" tag="60" />
+		</end>
+	</IOT_DAY_ADJ>
+	
+	
+	<!-- 1.4 历史累计量推送接口-->
+	<IOT_QUERY_RATABLE>
+		<body>
+			<rcds tag="65">
+				<rcd type="String" len="9" tag="490" errCode="F010" />
+				<rcd type="String" len="30" tag="2153" errCode="F030" />
+				<rcd type="String" len="30" tag="245" errCode="F060" />
+				<rcd type="String" len="30" tag="499" errCode="F070" />
+				<rcd type="String" len="32" tag="2150" errCode="F110" />
+				<rcd type="String" len="9" tag="2159" errCode="F120" />
+				<rcd type="int" len="14" tag="2158" errCode="F080" />
+				<rcd type="int" len="18" tag="496" errCode="F130" />
+				<rcd type="int" len="50" tag="259" errCode="F090"/>
+				<rcd type="String" len="32" tag="476" errCode="F100" />
+				<rcd type="String" len="12" tag="475" errCode="F140" />
+				<rcd type="String" len="32" tag="461" errCode="F150" />
+			</rcds>
+		</body>
+	</IOT_QUERY_RATABLE>
+	
+</config>
